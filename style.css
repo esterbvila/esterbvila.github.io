@@ -227,7 +227,6 @@
         flex-direction:row;
         margin:auto;
         width:920px;
-        border: 4px black solid;
     }
     div.button{
         margin:auto;
@@ -244,14 +243,12 @@
         text-align:center;
         width:700px;
         margin:auto;
-        border: 3px red solid;
         overflow: hidden;
     }
     #sliderContent{
         display:flex;
         flex-direction:row;
         width:1500px;
-        border: 2px orange solid;
         object-fit: contain;
     }
     div.project{

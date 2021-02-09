@@ -87,8 +87,7 @@
     /* NEXT PAGE */
     div.nextPage{
         text-align:center;
-        margin:0;
-        margin-top:10px;
+        margin:50px 0 30px 0;
     }
     div.nextPage > a {
         text-decoration: none;
@@ -212,7 +211,7 @@
         margin-top:20px;
         margin-bottom:0;
         max-width:510px;
-        color:rgb(52, 52, 52);
+        color:rgb(72, 72, 72);
     }
 
     /* WORK */
@@ -220,6 +219,7 @@
         text-align:center;
         margin-top:50px;
         margin-bottom: 0px;
+        font-size:3em;
     }
     /* Image Slider */
     div.slider{
@@ -227,6 +227,7 @@
         flex-direction:row;
         margin:auto;
         width:920px;
+        margin-top:40px;
     }
     div.button{
         margin:auto;
@@ -275,6 +276,7 @@
         margin:auto;
         font-size:1em;
         text-align:justify;
+        line-height: 1.5em;
     }
     div.project > p.segon{
         width:650px;
@@ -307,24 +309,46 @@
     /* JOURNEY */
     div.journey > div > h1{
         text-align:center;
+        margin-top:50px;
+        font-size:3em;
     }
     div.journey > div.flex {
         display:flex;
-        padding-left:3%;
-        padding-right: 3%;
-        margin-bottom:2%;
+        padding:0 5%;
+        z-index:1;
+        align-items: flex-start;
+        margin:auto;
+        margin-top:15px;
     }
     div.journey > div.flex > div.period{
-        width:27%;
+        width:30%;
+        padding-left:20px;
+        padding-right:20px;
     }
     div.arrow{
-        width:5%;
-        text-align:center;
-        margin:auto;
+        z-index:-1;
+        display:flex;
+        flex-direction:row;
+        position:relative;
+        bottom:650px;
+        height:0;
+    }
+    div.journey > div > div > h2{
+        font-size:2em;
+    }
+    #february {
+        letter-spacing: 3px;
+    }
+    #november{
+        letter-spacing: 2.5px;
+    }
+    #atPresent{
+        letter-spacing: 7px;
     }
     i.fa-angle-double-right{
-        font-size:3em;
-        margin:auto;
+        font-size:40em;
+        opacity:0.2;
+        z-index:-1;
     }
     div.journey > div.flex > div.period > h2{
         color: /*rgb(52, 52, 52) */ white;
@@ -336,17 +360,19 @@
     div.journey > div.flex > div.period > p{
         text-align:center;
         font-size:1em;
-        line-height:1.4em;
+        line-height:1.5em;
     }
     p.firstP{
         font-weight: bold;
+        font-size:1em;
     }
     div.journey > div.flex > div.period > div{
         text-align:center;
     }
     .journey > .flex > .period > div > img{
-        width:100px;
-        height:100px;
+        width:200px;
+        height:200px;
+        opacity:0.9;
     }
 
     /* CONTACT */

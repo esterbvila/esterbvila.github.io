@@ -6,16 +6,18 @@ var project = document.querySelectorAll("div.project")
 
 prev.addEventListener("click", () => {
     moveSlider(-1)
+    // changeColor(-1)
 })
 
 next.addEventListener("click", () => {
     moveSlider(1)
+    // changeColor(1)
 })
 
 var activeProject = 0;
 var numProjects = project.length   // calcula el numero de projectes que hi ha
 
-slider.style.width = (numProjects * 500) + "px"     // li fixa l'amplada al div interior
+slider.style.width = (numProjects * 700) + "px"     // li fixa l'amplada al div interior
 
 function moveSlider(direction) {
     activeProject = activeProject + direction   // canvia la imatge activa
@@ -25,7 +27,7 @@ function moveSlider(direction) {
 
     mostrar(activeProject);
     
-    slider.style.marginLeft = `${-500 * activeProject}px`   // fixa el marge perque es vegi la imatge correcta
+    slider.style.marginLeft = `${-700 * activeProject}px`   // fixa el marge perque es vegi la imatge correcta
 }
 
 function mostrar(des){      // comprova quina imatge es mostra i oculta la resta
@@ -41,3 +43,16 @@ function mostrar(des){      // comprova quina imatge es mostra i oculta la resta
 }
 
 mostrar(0)
+
+// function changeColor(direction){
+//     activeProject = activeProject + direction
+//     if (activeProject = -1 ){
+//         document.getElementById("bgChange").style.backgroundColor = "rgba(255, 180, 172, 0.3)";
+//     }else if (activeProject = 0){
+//         document.getElementById("bgChange").style.backgroundColor = "rgba(255, 197, 50, 0.3)";
+//     }else if (activeProject = 1){
+//         document.getElementById("bgChange").style.backgroundColor = "purple";
+//     }else{
+//         document.getElementById("bgChange").style.backgroundColor = "blue";
+//     }
+// }

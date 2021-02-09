@@ -22,8 +22,8 @@
 <body>
     <div class="general">
         
-        <div class="container">
-            <div class ="presentation">
+        <div class="container presentation">
+            <div class ="presentation margin">
                 <div class="circles">
                         <img class="round" id="photo" src="res/IMG_0941 quadrada.jpeg" alt="foto personal">
                         <img class="round" id="circle" src="res/quadrat groc.png" alt="rodona groga">
@@ -31,20 +31,20 @@
                 
                 <div class="text">
                     <h1 class="animate__animated animate__flash animate__delay-1s ">Hi there! </h1>
-                    <h1 id="animated">My name is <span id="Ester">Ester </span>and I'm a Junior Frontend Developer & Advertiser
+                    <h1 id="segondH1">My name is <span id="Ester">Ester </span>and I'm a Junior Frontend Developer & Advertiser
                     </h1>
                     <h2>I offer creative and aesthetic solutions that meet clients' communicative needs. </h2>
                 </div>
             </div>
             <div class="nextPage">
-                <a href="div.work" class="hvr-icon-down">
+                <a href="#bgChange" class="hvr-icon-down">
                     <p>Visit my Work</p>
                     <i class="fas fa-angle-down hvr-icon"></i>
                 </a>
             </div>
         </div>
         
-        <div class="container blueBg work">
+        <div class="container work" id="bgChange">
             <div>
                 <h1>My Work</h1>
             </div>
@@ -58,36 +58,46 @@
                     <div id="sliderContent">
                         <div class="project">
                             <img class="round" src="res/IMG_0941 quadrada.jpeg" alt="">
-                            <h2>Name of the project</h2>
-                            <p>lorem ipsum dolor sit amet.lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore sunt iste repellendus esse repudiandae fugit quae necessitatibus ipsa perspiciatis!</p>
-                            <div class="tools">
+                            <h2>Name of the project&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-html5"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-css3-alt"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-js"></i> </h2>
+                            <p>lorem ipsum dolor sit amet.lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore sunt iste repellendus esse repudiandae fugit quae necessitatibus ipsa perspiciatis! </p>
+                                
+                            <p class="segon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque similique fugit nobis quod deleniti culpa minus consequuntur deserunt quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus.</p>
+                            <!-- <div class="tools">
                                 <i class="fab fa-html5"></i>
                                 <i class="fab fa-css3-alt"></i>
                                 <i class="fab fa-js"></i>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="project">
                             <img class="round" src="res/IMG_0941 quadrada.jpeg" alt="">
-                            <h2>Name of the project</h2>
-                            <p>lorem ipsum dolor sit amet.lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore sunt iste repellendus esse repudiandae fugit quae necessitatibus ipsa perspiciatis!</p>
-                            <div class="tools">
+                            <h2>Name of the project&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-bootstrap"></i>&nbsp;
+                                <i class="fab fa-vuejs"></i>&nbsp;
+                                <i class="fab fa-gulp"></i></h2>
+                            <p>lorem ipsum dolor sit amet.lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore sunt iste repellendus esse repudiandae fugit quae necessitatibus ipsa perspiciatis! </p>
+                            
+                            <p class="segon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque similique fugit nobis quod deleniti culpa minus consequuntur deserunt quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus.</p>
+                            <!-- <div class="tools">
                                 <i class="fab fa-bootstrap"></i>
                                 <i class="fab fa-vuejs"></i>
                                 <i class="fab fa-gulp"></i>
 
-                            </div>
+                            </div> -->
                         </div>
                         <div class="project">
                             <img class="round" src="res/IMG_0941 quadrada.jpeg" alt="">
-                            <h2>Name of the project</h2>
-                            <p>lorem ipsum dolor sit amet.lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore sunt iste repellendus esse repudiandae fugit quae necessitatibus ipsa perspiciatis!</p>
+                            <h2>Name of the project&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-sass"></i>&nbsp;&nbsp;&nbsp;
+                                <i class="fab fa-sketch"></i>&nbsp;&nbsp;&nbsp;
+                                <i class="fab fa-figma"></i></h2>
+                            <p>lorem ipsum dolor sit amet.lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore sunt iste repellendus esse repudiandae fugit quae necessitatibus ipsa perspiciatis! </p>
+                            
+                            <p class="segon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque similique fugit nobis quod deleniti culpa minus consequuntur deserunt quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus.</p>
 
-                            <div class="tools">
+                            <!-- <div class="tools">
                                 <i class="fab fa-sass"></i>
                                 <i class="fab fa-sketch"></i>
                                 <i class="fab fa-figma"></i>
 
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -98,21 +108,22 @@
                 </div>
             </div>
             <div class="nextPage white">
-                <a href="div.journey" class="hvr-icon-down">
-                    <p>Discover my Journey</p>
+                <a href="#journey" class="hvr-icon-down">
+                    <!-- <p>Discover my Journey</p> -->
                     <i class="fas fa-angle-down hvr-icon"></i>
                 </a>
             </div>
         </div>
         
-        <div class="container journey">
+        <div class="container journey" id="journey">
             <div>
                 <h1>My Journey</h1>
             </div>
             <div class="flex">
                 <div class="period">
                     <h2>February 2020</h2>
-                    <p>I finish my degree studies in Advertising & PR and I'm quite lost.  What should I do next ? What do I want ? What do I like ?... </p>
+                    <p class="firstP">I finish my degree studies in Advertising & PR and I'm quite lost. What should I do next? </p>
+                    
                     <p>I start reading, meditating and writing a lot. Eventually I get to understand more things about myself and how my mind works.</p>
                     <div>
                         <img class="round" src="res/IMG_0941 quadrada.jpeg" alt="">
@@ -121,31 +132,30 @@
                 </div>
                 
                 <div class="arrow">
-                    <i class="fas fa-angle-double-right blueC"></i>
+                    <i class="fas fa-angle-double-right whiteC"></i>
                 </div>
                 
                 <div class="period">
                     <h2>November 2021</h2>
-                    <p>I'm admitted into the Frontend web development Bootcamp by BIT Academy. I'm excited to start diving into this sector and be able to master the tools. </p>
+                    <p class="firstP">I'm admitted into the Frontend development Bootcamp by BIT Academy. </p>
+                        
+                    <p>I start diving into tools such as HTML, CSS & JavaScript and realise that Web layout really enlivens me. </p>
                     
-                    <p>While doing HTML & CSS, my aesthetic sense and detail-oriented skills are jumping for joy. I found myself very focused on the tasks and realising that I could be doing this all day. </p>
-                    
-                    <p>Then I start doing JavaScript and frustration overcomes satisfaction. I learn about the importance of persevering and that perfection and comparison with others can be fatal.</p>
                     <div>
                         <img class="round" src="res/IMG_0941 quadrada.jpeg" alt="">
                     </div>
                     
                 </div>
                 <div class="arrow">
-                    <i class="fas fa-angle-double-right blueC"></i>
+                    <i class="fas fa-angle-double-right whiteC"></i>
                     
                 </div>
                 
                 <div class="period">
                     <h2>March 2021</h2>
-                    <p>Having finished the Bootcamp, I'm now on my way of mastering JavaScript and View. </p>
+                    <p class="firstP">I finish the Bootcamp mastering the Frontend basics.</p> 
                     
-                    <p>I'm also going to start a Back end Bootcamp, where I will learn....</p>
+                    <p>I'm excited to expand my knowleadge in web development taking a Backend course.</p>
                     <div>
                         <img class="round"  src="res/IMG_0941 quadrada.jpeg" alt="">
                     </div>
@@ -154,8 +164,8 @@
             </div>
 
             <div class="nextPage">
-                <a href="div.contact" class="hvr-icon-down">
-                    <p>Contact me</p>
+                <a href="#contact" class="hvr-icon-down">
+                    <!-- <p>Contact me</p> -->
                     <i class="fas fa-angle-down hvr-icon"></i>
                 </a>
             </div>
@@ -163,7 +173,7 @@
         </div>
         
         
-        <div class="container blueBg contact">
+        <div class="container contact" id="contact">
             <div>
                 <div>
                     <h3>Don't hesitate to contact me</h3>
@@ -174,7 +184,7 @@
                     </div>
                 </div>
                 
-                <div>
+                <div id="visitProjects">
                     <h3>& visit my projects in greater depth</h3>
                     <div class="icons">
                         <a href="https://github.com/esterbvila"><i class="fab fa-github whiteC"></i></a>

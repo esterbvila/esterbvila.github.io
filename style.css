@@ -86,7 +86,7 @@ Large devices (laptops/desktops, 992px and up)
     /* NEXT PAGE */
     div.nextPage{
         text-align:center;
-        margin:50px 0 30px 0;
+        
     }
     div.nextPage > a {
         text-decoration: none;
@@ -213,7 +213,7 @@ Large devices (laptops/desktops, 992px and up)
     /* WORK */
     div.work > div > h1{
         text-align:center;
-        margin-top:50px;
+        margin-top:35px;
         margin-bottom: 0px;
         font-size:3em;
     }
@@ -223,7 +223,7 @@ Large devices (laptops/desktops, 992px and up)
         flex-direction:row;
         margin:auto;
         width:920px;
-        margin-top:40px;
+        margin-top:20px;
     }
     div.button{
         margin:auto;
@@ -305,7 +305,8 @@ Large devices (laptops/desktops, 992px and up)
     /* JOURNEY */
     div.journey > div > h1{
         text-align:center;
-        margin-top:50px;
+        margin-top:35px;
+        margin-bottom:10px;
         font-size:3em;
     }
     div.journey > div.flex {
@@ -314,7 +315,7 @@ Large devices (laptops/desktops, 992px and up)
         z-index:1;
         align-items: flex-start;
         margin:auto;
-        margin-top:15px;
+        margin-top:0;
     }
     div.journey > div.flex > div.period{
         width:30%;
@@ -333,13 +334,15 @@ Large devices (laptops/desktops, 992px and up)
         font-size:2em;
     }
     #february {
-        letter-spacing: 3px;
+        letter-spacing: 1.2px;
+        font-size:1.9em;
     }
     #november{
-        letter-spacing: 2.5px;
+        letter-spacing: 1px;
+        font-size:1.8em;
     }
     #atPresent{
-        letter-spacing: 7px;
+        letter-spacing: 5px;
     }
     i.fa-angle-double-right{
         font-size:40em;
@@ -366,8 +369,8 @@ Large devices (laptops/desktops, 992px and up)
         text-align:center;
     }
     .journey > .flex > .period > div > img{
-        width:200px;
-        height:200px;
+        width:120px;
+        height:120px;
         opacity:0.9;
     }
 

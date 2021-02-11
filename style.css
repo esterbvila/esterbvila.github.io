@@ -255,7 +255,7 @@ Large devices (laptops/desktops, 992px and up)
         border-radius:50%;
         width: 700px;
     }
-    div.project > img{
+    div.project > a > img{
         width:225px;
         height:225px;
         border: 8px solid rgba(254,177,185,1);
@@ -265,6 +265,7 @@ Large devices (laptops/desktops, 992px and up)
         margin-bottom:2%;
         font-size: 1.8em;
         text-shadow: 4px 2px rgba(254,177,185,1);
+        letter-spacing:3px;
         /* background-color: rgba(254,177,185,1); */
     }
     div.project > p{

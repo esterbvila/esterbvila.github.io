@@ -74,11 +74,11 @@ Large devices (laptops/desktops, 992px and up)
         height:100vh;
         display:flex;
         flex-direction:column;
-        justify-content: space-around;
+        justify-content: center;
     }
     /* NEXT PAGE */
     div.nextPage{
-        margin: 1% auto;
+        margin: auto;;
     }
     div.nextPage > a > i {
         font-size: 3em;
@@ -92,10 +92,9 @@ Large devices (laptops/desktops, 992px and up)
     }
     /* PRESENTACIÓ */
     div.flexRow{
-        margin:auto;
         display:flex;
         justify-content:center;
-        /* align-items: flex-start; */
+        margin:auto;
     }
     div.circles{
         text-align:center;
@@ -164,7 +163,7 @@ Large devices (laptops/desktops, 992px and up)
         text-decoration:none;
     }
     div.project{
-        margin:auto 2rem;
+        margin:0 2rem;
         width:342px;
     }
     div.project:hover{

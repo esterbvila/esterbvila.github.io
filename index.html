@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ester Batllori, Frontend Developer</title>
+    <title>Ester Batllori i Vila</title>
     <link rel="stylesheet" href="style.css">
     
     <!--  Animate CSS -->
@@ -18,189 +18,148 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <link rel="icon" href="res/favicon-16x16.png" type="image/x-icon">
 </head>
+
+
 <body>
     <div class="general">
-        
-        <div class="container presentation">
-            <div class ="presentation margin">
+        <div class="container">
+            <div class ="flexRow">
                 <div class="circles">
-                    <img class="round" id="photo" src="res/IMG_0941 quadrada.jpeg" alt="foto personal">
-                    <img class="round" id="circle" src="res/quadrat groc.png" alt="rodona groga">
+                    <img id="photo" src="res/IMG_0941 quadrada.jpeg" alt="foto personal">
+                    <img id="circle" src="res/quadrat blanc.png" alt="rodona blava">
                 </div>
                 
                 <div class="text">
-                    <h1 class="animate__animated animate__flash animate__delay-1s ">Hi there! </h1>
-                    <h1 id="segondH1">My name is <span id="Ester">Ester </span>and I'm a Junior Frontend Developer & Advertiser
+                    <h1 class="animate__animated animate__flash animate__delay-1s ">Hi there!  </h1>
+                    <h1>&lt; My name is <span id="Ester">Ester </span>and I'm a Junior Frontend Developer & Publicist /&gt;
                     </h1>
-                    <h2>I offer creative and aesthetic solutions that meet clients' communicative needs. </h2>
+                    <h4>I offer creative solutions that meet clients' communicative needs </h4>
                 </div>
             </div>
             <div class="nextPage">
-                <a href="#bgChange" class="hvr-icon-down">
-                    <p>Visit my Work</p>
+                <a href="#work" class="hvr-icon-down">
+                    <i class="fas fa-angle-down hvr-icon"></i>
+                </a>
+            </div>
+        </div>
+       
+        <div class="container" id="work">
+                <h1 class="header">&lt; My Projects /&gt;</h1>
+            <div class="projects">
+                <a href="https://github.com/danifdezalonso/hourglass-app">
+                <div class="project">
+                    <div class="bgBrown">
+                        <h2>Hourglass</h2>
+                    </div>
+                    <div class="bgWhite">
+                        <img id="HourglassImg" src="res/HourglassDesktop.png" alt="Hourglass Desktop">
+                        <p class="padding">A services exchange platform made with GET and PUSH (Firebase), npm, react-router-dom and react select. It's currently under construction.
+                        </p>
+                        <p class="icons">
+                            <a href="https://www.figma.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="25" height="25"/> </a><a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="25" height="25"/> </a><a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="25" height="25"/> </a><a href="https://sass-lang.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="25" height="25"/> </a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="25" height="25"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="25" height="25"/> </a><a href="https://babeljs.io/" target="_blank"><img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="25" height="25"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="25" height="25"/> </a> <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="25" height="25"/> </a> <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="25" height="25"/> </a>
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+                
+            <div class="nextPage">
+                <a href="#journey" class="hvr-icon-down">
                     <i class="fas fa-angle-down hvr-icon"></i>
                 </a>
             </div>
         </div>
         
-        <div class="container work" id="bgChange">
-            <div>
-                <h1>My Work</h1>
-            </div>
-            <div class="slider">
-                <div class="button">
-                    <a href="#" class="hvr-icon-back">
-                        <i class="fas fa-chevron-left hvr-icon" id="previous"></i>
+            <div class="container" id="journey">
+                    <h1 class="header"> &lt; My Journey /&gt;</h1>
+                <div class="flexRow">
+                    <div class="period">
+                        <div class="bgBrown">
+                            <h2>February 2020</h2>
+                            <img id="bruixola"  src="res/bruixolaBlanca.svg" alt="brúixola icona">
+                        </div>
+                        <div class="bgWhite">
+                            <p class="bold">I finish my degree studies in communication. What should I do next?</p>
+                            <p class="marginB">
+                            I start reading, meditating and writing a lot. Eventually I get to understand more things about myself and how my mind works.
+                            </p>
+                            <p class="marginB">
+                            Finally, I decide to continue my career in the web development sector, since it's an area where my skills can be enhanced and with a lot of future ahead. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="period">
+                        <div class="bgBrown">
+                            <h2>November 2021</h2>
+                            <img src="res/girlWhite.svg" alt="">
+                        </div>
+                        <div class="bgWhite">
+                            <p class="bold">I'm admitted into the Frontend course by BIT Academy. </p>
+                            <p class="marginB">I realise that my major aptitudes (attention to detail, creativity, aesthetic sense & organization) really come into play when developing a website, so it really stimulates me. </p>
+
+                            <p class="marginB"> I learn new tools and languages such as Javascript, React or Sass that allow me to develop highly functional projects. </p>
+                        </div>
+                    </div>
+                    <div class="period">
+                        <div class="bgBrown">
+                            <h2>At present</h2>
+                            <img id="deal" src="res/dealWhite.svg" alt="">
+                        </div>
+                        <div class="bgWhite">
+                            <p class="bold"> Now that I master the Frontend basics, I'm eager to start working in a company.</p> 
+
+                            <p class="marginB">As an organized and creative person, I can contribute to any enterprise by delivering coherently structured projects, within the agreed terms and deadlines, and by handling problems in innovative ways. </p>
+                            <p class="marginB">Additionally, I've started a Backend course at BIT. </p>
+                        </div>
+                    </div>
+                    <div class="period">
+                        <div class="bgBrown">
+                            <h2>Future</h2>
+                            <img id="deal" src="res/elearningWhite.svg" alt="">
+                        </div>
+                        <div class="bgWhite">
+                            <p class="bold">I see myself leading innovative projects  </p> 
+                            <p class="marginB">In 5 years from now, I'm going to be leading projects, since I'll have had adquired a lot of understanding about web development tools, frameworks and functionalities  </p>
+                            <p class="marginB">Additionally, I've started a Backend course at BIT. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nextPage">
+                    <a href="#contact" class="hvr-icon-down">
+                        <i class="fas fa-angle-down hvr-icon"></i>
                     </a>
-                </div>
-                <div id="slider">
-                    <div id="sliderContent">
-                        <div class="project">
-                            <a href="#"><img class="round" src="res/Port Premià.png" alt="Port Premià"></a>
-                            
-                            <h2>Port de Premià website&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-html5"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-css3-alt"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-bootstrap"></i> </h2>
-                            <p>lorem ipsum dolor sit amet.lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore sunt iste repellendus esse repudiandae fugit quae necessitatibus ipsa perspiciatis! </p>
-                            
-                            <p class="segon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque similique fugit nobis quod deleniti culpa minus consequuntur deserunt quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus.</p>
-                            <!-- <div class="tools">
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fab fa-js"></i>
-                            </div> -->
-                        </div>
-                        <div class="project">
-                            <a href="#"><img class="round" src="res/IMG_0941 quadrada.jpeg" alt=""></a>
-                            <h2>Name of the project&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-js"></i> &nbsp;
-                                <i class="fab fa-vuejs"></i>&nbsp;
-                                <i class="fab fa-gulp"></i></h2>
-                                <p>lorem ipsum dolor sit amet.lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore sunt iste repellendus esse repudiandae fugit quae necessitatibus ipsa perspiciatis! </p>
-                                
-                                <p class="segon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque similique fugit nobis quod deleniti culpa minus consequuntur deserunt quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus.</p>
-                                <!-- <div class="tools">
-                                    <i class="fab fa-bootstrap"></i>
-                                    <i class="fab fa-vuejs"></i>
-                                    <i class="fab fa-gulp"></i>
-                                    
-                                </div> -->
-                            </div>
-                            <div class="project">
-                                <a href="#"><img class="round" src="res/IMG_0941 quadrada.jpeg" alt=""></a>
-                                <h2>Name of the project&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-sass"></i>&nbsp;&nbsp;&nbsp;
-                                    <i class="fab fa-sketch"></i>&nbsp;&nbsp;&nbsp;
-                                    <i class="fab fa-figma"></i></h2>
-                                    <p>lorem ipsum dolor sit amet.lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore sunt iste repellendus esse repudiandae fugit quae necessitatibus ipsa perspiciatis! </p>
-                                    
-                                    <p class="segon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque similique fugit nobis quod deleniti culpa minus consequuntur deserunt quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus.</p>
-                                    
-                                    <!-- <div class="tools">
-                                        <i class="fab fa-sass"></i>
-                                        <i class="fab fa-sketch"></i>
-                                        <i class="fab fa-figma"></i>
-                                        
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="button">
-                            <a href="#" class="hvr-icon-forward">
-                                <i class="fas fa-chevron-right hvr-icon" id="next"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nextPage white">
-                        <a href="#journey" class="hvr-icon-down">
-                            <!-- <p>Discover my Journey</p> -->
-                            <i class="fas fa-angle-down hvr-icon"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="container journey" id="journey">
-                    <div>
-                        <h1>My Journey</h1>
-                    </div>
-                    <div class="flex">
-                        <div class="period">
-                            <h2 id="february">February 2020</h2>
-                            <p class="firstP">I finish my degree studies in Communication and I feel lost.&nbsp;What should I do next? </p>
-                            
-                            <p>I start reading, meditating and writing a lot. Eventually I get to understand more things about myself and how my mind works.</p>
-                            <div>
-                                <img class="round" src="res/IMG_0941 quadrada.jpeg" alt="">
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="period">
-                            <h2 id="november">November 2021</h2>
-                            <p class="firstP">I'm admitted into the Frontend development Bootcamp by BIT Academy. </p>
-                            
-                            <p>I realise that my major aptitudes (attention to detail, creativity, aesthetic sense & organization) really come into play when developing a Website, so it really stimulates me. </p>
-                            
-                            <div>
-                                <img class="round" src="res/IMG_0941 quadrada.jpeg" alt="">
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="period">
-                            <h2 id="atPresent">At present</h2>
-                            <p class="firstP"> Now that I master the Frontend basics I'm eager to start working in a company.</p> 
-                            
-                            <p>I also plan on expanding my knowleadge by taking a Backend course, which starts on March. </p>
-                            <div>
-                                <img class="round"  src="res/IMG_0941 quadrada.jpeg" alt="">
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="arrow">
-                        <i class="fas fa-angle-double-right whiteC"></i> 
-                        <i class="fas fa-angle-double-right whiteC"></i> 
-                        <i class="fas fa-angle-double-right whiteC"></i> 
-                    </div>
-                    
-                    <div class="nextPage">
-                        <a href="#contact" class="hvr-icon-down">
-                            <!-- <p>Contact me</p> -->
-                            <i class="fas fa-angle-down hvr-icon"></i>
-                        </a>
-                    </div>
-                    
-                </div>
-                
-                
-                <div class="container contact" id="contact">
-                    <div>
-                        <div>
-                            <h3>Don't hesitate to contact me</h3>
-                            <div class="icons">
-                                <a href="https://www.linkedin.com/in/esterbatllori/"><i class="fab fa-linkedin-in whiteC"></i></a>
-                                <a href="mailto:ester.batllori@gmail.com"> <i class="far fa-envelope whiteC"></i></a>
-                                <i class="fas fa-phone-alt whiteC"></i>
-                            </div>
-                        </div>
-                        
-                        <div id="visitProjects">
-                            <h3>& visit my projects in greater depth</h3>
-                            <div class="icons">
-                                <a href="https://github.com/esterbvila"><i class="fab fa-github whiteC"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <footer>
-                        <small>&copy; Copyright 2021, Ester Batllori I Vila</small>
-                    </footer>
                 </div>
             </div>
             
-            <!--  Font Awesome  -->
-            <script src="https://kit.fontawesome.com/0488aadc74.js" crossorigin="anonymous"></script>
-            <!--  Animations  -->
-            <script src="animations.js"></script>
-        </body>
-        </html>
-        
-        
+            <div class="container" id="contact">
+                <div class="marginAuto">
+                    <div>
+                        <h3>Don't hesitate to contact me</h3>
+                        <div class="icons">
+                            <a href="https://www.linkedin.com/in/esterbatllori/"><i class="fab fa-linkedin-in footer"></i></a>
+                            <a href="mailto:ester.batllori@gmail.com"> <i class="far fa-envelope footer"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>& visit my projects in greater depth</h3>
+                        <div class="icons">
+                            <a href="https://github.com/esterbvila"><i class="fab fa-github footer"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer>
+                    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Llicència de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+                    </p>
+                    <p>Aquesta obra està subjecta a una llicència de <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Reconeixement-NoComercial-CompartirIgual 4.0 Internacional de Creative Commons</a>. Ester Batllori I Vila, 2021</p>
+                </footer>
+            </div>
+    </div>
+        <script src="animations.js"></script>
+    </body>
+    </html>
+    
+    

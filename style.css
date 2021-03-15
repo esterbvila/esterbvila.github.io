@@ -25,7 +25,6 @@ Large devices (laptops/desktops, 992px and up)
     h1{
         color: white;
         font-size: 2.5em;
-        
     }
     h1.header{
         text-align:center;
@@ -184,6 +183,7 @@ Large devices (laptops/desktops, 992px and up)
         justify-content:space-between;
         border-top: 1px solid #8c69691c;
     }
+
     /* JOURNEY */
     div.period{
         display:flex;
@@ -239,8 +239,6 @@ Large devices (laptops/desktops, 992px and up)
     i.fa-github{
         font-size:2.8em;
     }
-
-
     footer{
         text-align:left;
         font-size:0.7em;

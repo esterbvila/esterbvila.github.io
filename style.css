@@ -23,13 +23,14 @@ Large devices (laptops/desktops, 992px and up)
         margin:0;
     }
     h1{
-        color: #8c6969;
+        color: white;
         font-size: 2.5em;
-        font-style:italic ;
+        
     }
     h1.header{
         text-align:center;
         margin:auto;
+        color: #8c6969;
     }
     h2{
         color: white;
@@ -38,12 +39,12 @@ Large devices (laptops/desktops, 992px and up)
     }
     h3{
         color: #8c6969;
-        font-size:1.3em;
+        font-size:1.4em;
         font-weight: 500;
     }
     h4{
         color: #8c6969;
-        font-size:1.3em;
+        font-size:1.1em;
         font-weight: 500;
     }
     p{
@@ -78,7 +79,7 @@ Large devices (laptops/desktops, 992px and up)
     }
     /* NEXT PAGE */
     div.nextPage{
-        margin: auto;;
+        margin:auto;
     }
     div.nextPage > a > i {
         font-size: 3em;
@@ -91,65 +92,51 @@ Large devices (laptops/desktops, 992px and up)
         background:linear-gradient(280deg, rgba(255, 197, 50, 0.749) 0%, rgba(255, 180, 172, 0.714) 79%, rgba(254,177,185,1) 100%);
     }
     /* PRESENTACIÓ */
+    #presentation > div{
+        margin:auto;
+    }
     div.flexRow{
         display:flex;
         justify-content:center;
-        margin:auto;
     }
-    div.circles{
-        text-align:center;
-        width:255px;
-        margin-top:auto;
-        margin-bottom:auto;
-        z-index:1;
+    div.flexC{
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+        vertical-align:bottom;
+        padding-left:7%;
     }
     #photo{
-        width:255px;
-        height:255px;
+        width:230px;
+        height:230px;
+        border-radius:50%;
         text-align:center;
-        margin-left:5px;
-        margin-right:5px;
-        position:relative;
-        top:130px;
-        margin-top:-80px;
-        border-radius:50%;
     }
-    #circle{
-        width:400px;
-        height:360px;
-        position: relative;
-        top:-80px;
-        z-index: -1;
-        margin-bottom:-100px;
-        border-radius:50%;
-        opacity:0.4;
-    }
-    div.text{
-        padding-left:30px;
-        max-width:685px;
-        vertical-align:middle;
-        margin-top:auto;
-        margin-bottom:auto;
-        z-index:1;
-    }
-    div.text > h1{
-        margin-bottom:20px;
-        margin-top:0;
-        max-width: 580px;
+    div.flexC > h1{
+        margin: 1% 0;
+        text-align:left;
+        line-height:1.3em;
+        width:404px;
     }
     h1.animate__animated{
-        font-family: 'Sedgwick Ave', cursive;
-        transform: rotate(-8deg);
-        position:relative;
-        top: -30px;
-        left:-30px;
-        color:white;
-        font-size:3.5em;
+        font-style:italic;
     }
-    div.text > h4{
-        position:relative;
-        left: -100px;
-        max-width:400px;
+    h1.brown{
+        color:#8c6969;
+    }
+    div.contact{
+        margin:7% auto auto auto;
+        text-align:center; 
+    }
+    div.contact > h4{
+        letter-spacing: 2px;
+        border-top: 1px solid #8c696944;
+        padding:0.7rem;
+    }
+    div.container > div > div.contact > div.icons{
+        text-align:Center;
+        font-size:0.7em;
+        margin:0;
     }
 
     /* WORK */
@@ -165,6 +152,7 @@ Large devices (laptops/desktops, 992px and up)
     div.project{
         margin:0 2rem;
         width:342px;
+        border-radius:10px;
     }
     div.project:hover{
         box-shadow: 0 8px 32px 0 #8c6969b4;
@@ -201,7 +189,7 @@ Large devices (laptops/desktops, 992px and up)
         display:flex;
         flex-direction:column;
         margin:auto 1%;
-        width:290px;
+        width:305px;
     }
     div.period > div.bgBrown{
        display:flex;
@@ -209,14 +197,14 @@ Large devices (laptops/desktops, 992px and up)
     }
     div.period > div.bgWhite{
         padding:1rem;
-        height:290px;
+        height:300px;
     }
     p.bold{
-        margin:0 0 0.8rem 0;
+        margin:0 0 0.7rem 0;
         font-weight: bold;
     }
     p.marginB{
-        margin-bottom:0.8rem;
+        margin-bottom:0.55rem;
     }
     div.period > div.bgBrown > img{
         width:35px;
@@ -239,6 +227,9 @@ Large devices (laptops/desktops, 992px and up)
     i.footer{
         color:#8c6969;
     }
+    i.footer:hover{
+        color:white;
+    }
     i.fa-linkedin-in {
         font-size:2.5em;
     }
@@ -248,22 +239,13 @@ Large devices (laptops/desktops, 992px and up)
     i.fa-github{
         font-size:2.8em;
     }
+
+
     footer{
         text-align:left;
-        font-size:0.6em;
+        font-size:0.7em;
         margin:1% auto;
-        max-width:450px;
-        display:flex;
     }
-    footer > p{
-        margin:auto 1%;
-        vertical-align:center;
-    }
-    footer > p > a{
-        text-decoration:none;
-        color:#8c6969;
-    }
-
 
 /*Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {} */

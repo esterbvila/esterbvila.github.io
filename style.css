@@ -37,14 +37,15 @@ Large devices (laptops/desktops, 992px and up)
         font-weight: 500;
     }
     h3{
-        color: #8c6969;
+        color: #987778;
         font-size:1.4em;
         font-weight: 500;
     }
     h4{
-        color: #8c6969;
+        color: #987778;
         font-size:1.1em;
         font-weight: 500;
+        letter-spacing: 1px;
     }
     p{
         color:#8c6969;
@@ -128,10 +129,11 @@ Large devices (laptops/desktops, 992px and up)
         margin:7% auto auto auto;
         text-align:center; 
         padding:1.5rem;
-        border-top: 1px solid #8c696944;
+        border-top: 1px solid #98777867;
     }
     div.contact > h4{
         letter-spacing: 2px;
+        color:#987778;
     }
     div.container > div > div.contact > div.icons{
         text-align:Center;
@@ -214,9 +216,6 @@ Large devices (laptops/desktops, 992px and up)
         height:310px;
         box-shadow: 0 8px 32px 0 #8c69695e;
     }
-    span.biggerFont{
-       
-    }
     p.bold{
         margin:0 0 0.7rem 0;
         font-weight:bold;
@@ -227,7 +226,7 @@ Large devices (laptops/desktops, 992px and up)
     div.period > div.bgBrown > img{
         width:35px;
         height:35px;
-        opacity:0.9;
+        opacity:0.7;
     }
 
     /* CONTACT */
@@ -236,14 +235,14 @@ Large devices (laptops/desktops, 992px and up)
     }
     div.marginAuto > div{
         text-align:center;
-        margin:2rem auto;
+        margin:3rem auto;
     }
     div.icons {
         letter-spacing: 10px;
         margin:0.8rem 0;
     }
     i.footer{
-        color:#8c6969;
+        color:#987778;
     }
     i.footer:hover{
         color:white;

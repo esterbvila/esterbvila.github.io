@@ -92,7 +92,7 @@ Large devices (laptops/desktops, 992px and up)
     }
     /* PRESENTACIÓ */
     #presentation > div{
-        margin: 10% auto auto auto;
+        margin: auto;
     }
     div.flexRow{
         display:flex;

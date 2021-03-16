@@ -92,7 +92,7 @@ Large devices (laptops/desktops, 992px and up)
     }
     /* PRESENTACIÓ */
     #presentation > div{
-        margin:auto;
+        margin: 11% auto auto auto;
     }
     div.flexRow{
         display:flex;
@@ -110,6 +110,7 @@ Large devices (laptops/desktops, 992px and up)
         height:230px;
         border-radius:50%;
         text-align:center;
+        box-shadow: 0 8px 32px 0 #8c69695e;
     }
     div.flexC > h1{
         margin: 1% 0;
@@ -126,16 +127,16 @@ Large devices (laptops/desktops, 992px and up)
     div.contact{
         margin:7% auto auto auto;
         text-align:center; 
+        padding:1.5rem;
+        border-top: 1px solid #8c696944;
     }
     div.contact > h4{
         letter-spacing: 2px;
-        border-top: 1px solid #8c696944;
-        padding:0.7rem;
     }
     div.container > div > div.contact > div.icons{
         text-align:Center;
         font-size:0.7em;
-        margin:0;
+        margin: 2% 0 0 0;
     }
 
     /* WORK */
@@ -169,8 +170,8 @@ Large devices (laptops/desktops, 992px and up)
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         border-radius: 0px 0px 10px 10px;
     }
-    #HourglassImg{
-        width:341px;
+    .projectImg{
+        width:340px;
         height:190px;
     }
     p.padding{
@@ -180,7 +181,7 @@ Large devices (laptops/desktops, 992px and up)
         font-size: 1.5rem;
         padding: 1rem;
         display:flex;
-        justify-content:space-between;
+        justify-content:space-evenly;
         border-top: 1px solid #8c69691c;
     }
 
@@ -198,6 +199,7 @@ Large devices (laptops/desktops, 992px and up)
     div.period > div.bgWhite{
         padding:1rem;
         height:300px;
+        box-shadow: 0 8px 32px 0 #8c69695e;
     }
     p.bold{
         margin:0 0 0.7rem 0;
@@ -243,6 +245,10 @@ Large devices (laptops/desktops, 992px and up)
         text-align:left;
         font-size:0.7em;
         margin:1% auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+        
     }
 
 /*Extra large devices (large laptops and desktops, 1200px and up)

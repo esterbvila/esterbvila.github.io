@@ -167,11 +167,19 @@ Large devices (laptops/desktops, 992px and up)
     }
     div.bgBrown > p.go > a > i{
         font-size:2em;
-        color:rgba(255, 255, 255, 0.781) ;
+        color:rgb(255, 255, 255) ;
         margin-top: 4px;
+        animation-name:changeColor;
+        animation-iteration-count: infinite;
+        animation-duration:1s;
+        -webkit-animation-direction: alternate-reverse;
     }
     div.bgBrown > p.go > a > i:hover{
-        color:white;
+        opacity:1;
+    }
+    @keyframes changeColor {
+        from {opacity:0.5;}
+        to {opacity:1;}
     }
     div.bgWhite{
         background: rgba(255, 255, 255, 0.411);
@@ -185,10 +193,6 @@ Large devices (laptops/desktops, 992px and up)
         width:340px;
         height:190px;
     }
-    .projectImg:hover{
-        opacity:0.6;
-    }
-
     p.padding{
         padding:1rem;
     }

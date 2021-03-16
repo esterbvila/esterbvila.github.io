@@ -153,7 +153,9 @@ Large devices (laptops/desktops, 992px and up)
         margin:0 2rem;
         width:342px;
         border-radius:10px;
-        box-shadow: 0 8px 32px 0 #8c696963;
+    }
+    div.project:hover{
+        box-shadow: 0 8px 32px 0 #8c69698f;
     }
     div.bgBrown{
         background: #8c6969;
@@ -167,20 +169,16 @@ Large devices (laptops/desktops, 992px and up)
     }
     div.bgBrown > p.go > a > i{
         font-size:2em;
-        color:rgb(255, 255, 255) ;
         margin-top: 4px;
-        animation-name:changeColor;
-        animation-iteration-count: infinite;
-        animation-duration:1s;
-        -webkit-animation-direction: alternate-reverse;
+        color:#c0acad;
     }
     div.bgBrown > p.go > a > i:hover{
-        opacity:1;
+        color:white;
     }
-    @keyframes changeColor {
-        from {opacity:0.5;}
-        to {opacity:1;}
+    i.card{
+        animation: bright;
     }
+    
     div.bgWhite{
         background: rgba(255, 255, 255, 0.411);
         backdrop-filter: blur( 4.5px );

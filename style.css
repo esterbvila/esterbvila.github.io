@@ -92,8 +92,8 @@ Large devices (laptops/desktops, 992px and up)
         background:linear-gradient(280deg, rgba(255, 197, 50, 0.749) 0%, rgba(255, 180, 172, 0.714) 79%, rgba(254,177,185,1) 100%);
     }
     /* PRESENTACIÓ */
-    #presentation > div{
-        margin: auto;
+    #presentation > div.main{
+        margin: 13% auto 10% auto;
     }
     div.main > div.flexRow{
         display:flex;
@@ -141,6 +141,9 @@ Large devices (laptops/desktops, 992px and up)
     i.presentation{
         font-size:2em;
         color: #987778;
+    }
+    #presentation > div.nextPage{
+        margin:0 auto 5% auto;
     }
 
     /* WORK */
@@ -265,6 +268,9 @@ Large devices (laptops/desktops, 992px and up)
         }
     }
     @media only screen and (max-width: 992px) {
+        h1.header{
+        font-size: 2em;
+        }
         html{
             scroll-behavior: initial;
         }
@@ -281,13 +287,16 @@ Large devices (laptops/desktops, 992px and up)
             display:none;
         }
         #presentation > div.main{
-            margin: 10% auto 10% auto;
+            margin: 21% auto 29% auto;
         }
         div.contact{
-            border-bottom: 1px solid #98777867;
+            /* border-bottom: 1px solid #98777867; */
+        }
+        #work{
+            margin:0% auto 15% auto;
         }
         div.projects{
-            margin:1% auto 10% auto;
+            margin:3% auto 0 auto;
         }
         div.project{
             margin:1.5% 1rem;
@@ -307,10 +316,16 @@ Large devices (laptops/desktops, 992px and up)
         #contact{
             margin:5% auto 0.5% auto;
         } 
+        div.contact{
+            margin:5% auto auto auto;
+        }
     }
     @media only screen and (max-width: 768px) {
         #presentation{
-            padding:1.5rem;
+            padding:0 1.5rem;
+        }
+        #presentation > div.main{
+            margin: 20% auto 20% auto;
         }
         div.main > div.flexRow{
             flex-direction:column;
@@ -327,20 +342,33 @@ Large devices (laptops/desktops, 992px and up)
             margin:auto;
             width:unset;
         }
+        div.project{
+            margin:2% 1rem;
+        }
         div.period{
             width:unset;
         }
         div.period > div.bgWhite{
             height:max-content;
         }
+        div.contact{
+            margin:4% auto auto auto;
+        }
+
         
     }
     @media only screen and (max-width: 600px) {
         #presentation{
             padding:0 1rem;
         }
+        #presentation > div.main{
+            margin: 24% auto 15% auto;
+        }
         div.container > div > div.contact > div.icons{
             margin: 3% 0 0 0;
+        }
+        div.project{
+            margin:3% 1rem;
         }
         img.projectImg{
             width:100%;
@@ -362,6 +390,9 @@ Large devices (laptops/desktops, 992px and up)
         }
         h4{
             font-size:1em;
+        }
+        #presentation > div.main{
+            margin: 18% auto 12% auto;
         }
         div.flexC > h1{
             margin: 1% 0;

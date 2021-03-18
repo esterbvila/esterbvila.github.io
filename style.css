@@ -33,7 +33,7 @@ Large devices (laptops/desktops, 992px and up)
     }
     h2{
         color: white;
-        font-size:1.5em;
+        font-size:1.38em;
         font-weight: 500;
     }
     h3{
@@ -95,16 +95,15 @@ Large devices (laptops/desktops, 992px and up)
     #presentation > div{
         margin: auto;
     }
-    div.flexRow{
+    div.main > div.flexRow{
         display:flex;
-        justify-content:center;
+        justify-content:space-between;
+        width:680px;
     }
     div.flexC{
         display:flex;
         flex-direction:column;
-        margin:auto;
         vertical-align:bottom;
-        padding-left:7%;
     }
     #photo{
         width:230px;
@@ -137,8 +136,11 @@ Large devices (laptops/desktops, 992px and up)
     }
     div.container > div > div.contact > div.icons{
         text-align:Center;
-        font-size:0.7em;
-        margin: 2% 0 0 0;
+        margin: 2.5% 0 0 0;
+    }
+    i.presentation{
+        font-size:2em;
+        color: #987778;
     }
 
     /* WORK */
@@ -147,12 +149,13 @@ Large devices (laptops/desktops, 992px and up)
         justify-content:center;
         vertical-align:center;
         margin:auto;
+        flex-wrap:wrap;
     }
     a{
         text-decoration:none;
     }
     div.project{
-        margin:0 2rem;
+        margin:1% 1rem;;
         width:342px;
         border-radius:10px;
     }
@@ -177,17 +180,16 @@ Large devices (laptops/desktops, 992px and up)
     div.bgBrown > p.go > a > i:hover{
         color:white;
     }
-    i.card{
-        animation: bright;
-    }
-    
     div.bgWhite{
         background: rgba(255, 255, 255, 0.411);
         backdrop-filter: blur( 4.5px );
         -webkit-backdrop-filter: blur( 4.5px );
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 10px 10px; 
+    }
+    div.project > div.bgWhite{
+        height:400px;
     }
     .projectImg{
         width:340px;
@@ -205,11 +207,15 @@ Large devices (laptops/desktops, 992px and up)
     }
 
     /* JOURNEY */
+    #journey > div.flexRow{
+        display:flex;
+        justify-content:center;;
+    }
     div.period{
         display:flex;
         flex-direction:column;
-        margin:auto 1%;
-        width:305px;
+        margin:auto 0.5%;
+        width:320px;
     }
     div.period > div.bgWhite{
         padding:1rem;
@@ -243,28 +249,148 @@ Large devices (laptops/desktops, 992px and up)
     }
     i.footer{
         color:#987778;
+        font-size:2.5em;
     }
     i.footer:hover{
         color:white;
     }
-    i.fa-linkedin-in {
-        font-size:2.5em;
-    }
-    i.fa-envelope{
-        font-size:2.8em;
-    }
-    i.fa-github{
-        font-size:2.8em;
-    }
     footer{
-        text-align:left;
         font-size:0.7em;
         margin:1% auto;
     }
-
+    
+    @media only screen and (max-width: 1150px) {
+        div.period > div.bgWhite{
+            height:380px;
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        html{
+            scroll-behavior: initial;
+        }
+        div.general{
+            scroll-snap-type: initial;
+            overflow: initial;
+            height: initial;
+        }
+        div.container{
+            scroll-snap-align: initial;
+            height:initial;
+        } 
+        div.nextPage{
+            display:none;
+        }
+        #presentation > div.main{
+            margin: 10% auto 10% auto;
+        }
+        div.contact{
+            border-bottom: 1px solid #98777867;
+        }
+        div.projects{
+            margin:1% auto 10% auto;
+        }
+        div.project{
+            margin:1.5% 1rem;
+        }
+        #periods{
+            flex-wrap:wrap;
+            margin:auto;
+            margin:0.5% auto 5% auto;
+        }
+        div.period{
+            margin:1.5% 5%;
+            width:550px;
+        }
+        div.period > div.bgWhite{
+            height:max-content;
+        }
+        #contact{
+            margin:5% auto 0.5% auto;
+        } 
+    }
+    @media only screen and (max-width: 768px) {
+        #presentation{
+            padding:1.5rem;
+        }
+        div.main > div.flexRow{
+            flex-direction:column;
+            width:unset;
+        }
+        div.flexC{
+            margin-top:4%;
+        }
+        #photo{
+            margin:auto;
+        }
+        div.flexC > h1{
+            text-align:center;
+            margin:auto;
+            width:unset;
+        }
+        div.period{
+            width:unset;
+        }
+        div.period > div.bgWhite{
+            height:max-content;
+        }
+        
+    }
     @media only screen and (max-width: 600px) {
+        #presentation{
+            padding:0 1rem;
+        }
+        div.container > div > div.contact > div.icons{
+            margin: 3% 0 0 0;
+        }
+        img.projectImg{
+            width:100%;
+            height:190px;
+        }
+        #contact{
+            padding:1rem;
+        } 
+    }
+    @media only screen and (max-width: 390px) {
+        h1{
+            font-size: 2em;
+        }
+        h2{
+            font-size:1.3em;
+        }
+        h3{
+            font-size:1.1em;
+        }
+        h4{
+            font-size:1em;
+        }
+        div.flexC > h1{
+            margin: 1% 0;
+        }
+        div.contact{
+            padding:1rem;
+        }
+        div.contact >h4 {
+            letter-spacing:1px;
+        }
+        div.project{
+            width:unset;
+        }
+        div.project > div.bgWhite{
+            height:max-content;
+        }
+        img.projectImg{
+            width:100%;
+            height:170px;
+        }
+        div.marginAuto > div{
+            width:250px;
+        }
+        i.footer{
+            font-size:2.5em;
+        }
 
     }
+   
 
 /*Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {} */

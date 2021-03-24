@@ -164,7 +164,7 @@ Large devices (laptops/desktops, 992px and up)
     }
     div.project:hover{
         box-shadow: 0 8px 32px 0 #8c69698f;
-        transition:1s;
+        transition:0.5s;
     }
     div.bgBrown{
         background: #8c6969;
@@ -187,7 +187,7 @@ Large devices (laptops/desktops, 992px and up)
         border-radius: 0px 0px 10px 10px; 
     }
     div.project > div.bgWhite{
-        height:400px;
+        height:405px;
     }
     .projectImg{
         width:340px;

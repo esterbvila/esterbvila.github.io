@@ -164,6 +164,7 @@ Large devices (laptops/desktops, 992px and up)
     }
     div.project:hover{
         box-shadow: 0 8px 32px 0 #8c69698f;
+        transition:1s;
     }
     div.bgBrown{
         background: #8c6969;
@@ -172,21 +173,15 @@ Large devices (laptops/desktops, 992px and up)
         display:flex;
         justify-content: space-between;
     }
-    div.bgBrown >p.go > a{
-        text-decoration:none;
-    }
-    div.bgBrown > p.go > a > i{
+    div.bgBrown >p.go > i{
         font-size:2em;
         margin-top: 4px;
         color:#c0acad;
     }
-    div.bgBrown > p.go > a > i:hover{
-        color:white;
-    }
     div.bgWhite{
         background: rgba(255, 255, 255, 0.411);
         backdrop-filter: blur( 4.5px );
-        -webkit-backdrop-filter: blur( 4.5px );
+        -webkit-backdrop-filter: blur(4.5px);
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         border-radius: 0px 0px 10px 10px; 
@@ -198,6 +193,10 @@ Large devices (laptops/desktops, 992px and up)
         width:340px;
         height:190px;
     }
+    i.work{
+        font-size:2.5em;
+        color:#8c6969;
+    }
     p.padding{
         padding:1rem;
     }
@@ -208,6 +207,34 @@ Large devices (laptops/desktops, 992px and up)
         justify-content:space-evenly;
         border-top: 1px solid #8c69691c;
     }
+    div.ocult{
+        opacity:0;
+        position:absolute;
+        width:340px;
+        height:190px;
+        text-align: center;
+        background-color: #8c696973;
+    }
+    p.goIcons{
+        text-align: center;
+        margin:auto;
+        margin-top:3.8rem;
+        display:flex;
+        justify-content:space-around;
+        width:100px;
+        background-color:white;
+        padding: 1rem 0.5rem;
+        border-radius: 10px;
+    }
+    p.goIcons:hover{
+        opacity:0.9;
+    }
+    .tocar:hover .ocult{
+        z-index: 1;
+        transition-duration:0.6s;
+        opacity:1;
+    }
+
 
     /* JOURNEY */
     #journey > div.flexRow{
@@ -254,7 +281,10 @@ Large devices (laptops/desktops, 992px and up)
         color:#987778;
         font-size:2.5em;
     }
-    i.footer,i.presentation:hover{
+    i.footer:hover{
+        color:white;
+    }
+    i.presentation:hover{
         color:white;
     }
     footer{

@@ -47,6 +47,12 @@ Large devices (laptops/desktops, 992px and up)
         font-weight: 500;
         letter-spacing: 1px;
     }
+    h5{
+        color: white;
+        font-size:1.1em;
+        font-weight: 500;
+        margin: auto 0 auto 0.7em;
+    }
     p{
         color:#8c6969;
         font-weight: 400;
@@ -54,6 +60,9 @@ Large devices (laptops/desktops, 992px and up)
         margin:0;
         text-align:left;
         line-height:1.4em;
+    }
+    p.white{
+        color:white;
     }
     /* SCROLL */
     html{
@@ -248,11 +257,13 @@ Large devices (laptops/desktops, 992px and up)
     }
     div.period > div.bgWhite{
         padding:1rem;
-        height:310px;
+        height:330px;
         box-shadow: 0 8px 32px 0 #8c69695e;
     }
+    div.period >div.bgBrown{
+        justify-content: flex-start;
+    }
     p.bold{
-        margin:0 0 0.7rem 0;
         font-weight:bold;
     }
     p.marginB{
@@ -283,6 +294,8 @@ Large devices (laptops/desktops, 992px and up)
     #future > .bgWhite {
         background: rgba(255, 255, 255, 0.488);
     }
+
+
     /* CONTACT */
     div.marginAuto{
         margin:auto;

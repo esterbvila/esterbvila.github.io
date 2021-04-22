@@ -1,0 +1,220 @@
+<!DOCTYPE html> <!-- Si escrius ! + TAB el dodcument es genera sol -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apunts d'HTML</title>
+    <link rel="shortcuticon" href="proves.css" type="image/x-icon">  <!-- favicon generator -->
+    
+<!-- Feedback
+Genial, Ester! M'agrada molt que el títol estigui així de costat i es mantingui tota l'estona. Potser estaria guai que fessis el mateix amb un índex amb enllaços, per poder saltar entre seccions més fàcilment. -->
+<!-- Position:fixed i top, left al menú 
+He après a fer tal qual i tal
+control +f per buscar paraules clau-->
+    <style> 
+        body {
+            margin:auto;
+            width:1024px;
+            text-align:justify;
+        }
+        div.text{
+            margin: 1em 2em 1em 2em;
+        }
+        h1.títol{
+            background-color:lightblue;
+            padding-right: 50px;
+            padding-left: 1em;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            letter-spacing: 7px;;
+            font-family: 'Courier New', Courier, monospace;
+            transform:rotate(-90deg)translate(-126px, -238px);
+            position:fixed;
+        }
+        h3,h4{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p {margin-top: 1em;
+            font-size: ;
+        } 
+        div.code {
+            background-color: rgb(196, 221, 230);
+            max-width: fit-content; /*amb "with" a seques, l'amplada no varia encara que modifiquis coses del web*/ 
+            padding: 1em 40px 1em 0; /* els marges interiors es diuen Paddings. Padding top, Padding Right, Padding Bottom & Padding Left. Els números sempre estan ordenats en aquesta seqüència: top, right, bottom, left. */
+            margin-top: 1em;
+            margin-bottom: 1em;
+        } 
+        #bloque{
+            margin:1em 0; 
+            /* si poses 2 valors a "margin", el primer valor són els verticals i el segon valor són els horitzontals */
+        }
+        div.footer {
+            text-align:right;
+            font-variant:small-caps;
+        }
+        a {
+            text-decoration: none;
+            color:steelblue;
+        }
+    </style>
+    </head>
+    <body>
+        <h1 class="títol"> APUNTS  D'HTML5 </h1>
+        
+        <div class="text">
+            <p>L'html no és un llenguatge de programació, sinó un llenguatge de marcat d'hipertext (Hyper Text Markup Language) per a l'elaboració de pàgines web. És un estàndar que serveix de referència del software que conecta amb l'elaboració de pàgines web en les seves diverses versions, defineix una estructura bàsica i un codi (denomitat codi HTML) per la definició de contingut d'una pàgina web, com text, imatges, videos, jocs, entre d'altres.</p>
+            <p>És un estàndard a càrreg del World Wide Web Consortium (W3C), una organització dedicada a l'estandarització de casi totes les tecnologies lligades al web, sobretot pel que fa a la seva escriptura i interpretació.</p>
+            <p>L'HTML es considera el llenguatje web més important siguent la seva inventció crucial en l'aparició, desenvolupament i expansió de la World Wide Web (WWW). És l'estàndard que s'ha imposat en la visualització de pàgines web i és el que tots els navegadors actuals han adoptat.  </p>
+            <p> Els de W3C tenen un validador de codi: et diu si les pàgines cumpleixen amb els seus estàndards i el perquè. Serveix per a "depurar" el codi. És important per tema de posicionament web: si tens la teva pàgina i vols que el teu web aparegui el més a dalt possible quan es faci una cerca relacionada, com més cumpleixi amb els estàndars de codi, més a dalt apareixerà.</p>
+            
+            <h3>Accions bàsiques amb Viscual Studio Code</h3>
+            <ul>
+                <li> Mostrar totes les opcions, d'entre les quals crear un nou arxiu: "Command + Mayus + P" (MAC) o "Ctrl + Mayus + P" (Windows) </li>
+                <li> Crear la base d'un document:  "!" </li>
+                <li> Crear un comentari, no visible, introduïr: "diplé"+ ! seguit de dos guions i automàticament VSC ho marcarà en verd </li>
+                <li> Guardar un arxiu: "Command + S" (MAC) o "Control + S" (Windows)</li>
+                <li> Obrir el document a Chrome: "Alt + B" (Windows) </li>
+                <li> Salt de línia: "p". "br" era per a fer un salt de línea pero ja no s'utilitza.</li>
+                <li> Refer una acció: "Command + Z" (MAC) o "Control + Z" (Windows). </li>
+                <li> Ajustar bé totes les línees: "Command + Mayus + P", "Indent" i "re-indent lines" </li>
+                <li> Selecció de dues etiquetes alhora "Control + d"</li>
+                <li> Posar limit al codi per la dreta"Command + Mayus + P" (MAC) o "Ctrl + Mayus + P" (Windows) i "Toggle Word Wrap "Alt + Z" (Win) o "Option + Z" (Mac)</li>
+                <li> Tabular cap a l'esquerra: "Mayus + TAB"</li>
+                <li> Convertir a comentari "Control + Ç"</li>
+                <li> Insertar X divs de cop amb paragrafs a dins, esciure:"div*3.col>p". Si hi vull una referencia: div*3>a[href="wwww.google.es"]</li>
+            </ul>
+            
+            <h3>Chrome</h3>
+            <ul>
+                <li> "Command + Opció + I" (MAC) o "Control + Shift + I" (Windows) Per a Inspeccionar el codi html a Chrome.</li>
+                <li> Ordre de Prevalència dels Estils: 1er Estil dels elements; 2on CSS; 3er Predeterminat del Nagegador.</li>
+            </ul>
+            
+            <h3>Etiquetes</h3> <p><a href="https://www.w3schools.com/" target="_blank"> (enllaç oficial llistat etiquetes)</a></p>
+            <ul>
+                <li><h4>Títols</h4></li>
+                <p>"h1" Header. Títol Gran </p>
+                <p>"h2" Títol més Petit </p>
+                <p>"h3" Títol encara més petit</p>
+                <li><h4>Llistes a l'Índex:</h4></li>
+                <p>"ol" Llista Ordenada (té números)</p>
+                <p>"ul" Llista Desordenada (té puntets)</p>
+                <p>"li" Elements de llista </p>
+                <li><h4>Altres</h4></li>
+                <p>"pre"Respecta els espais que posis. Útil per posar trossets de codi.</p>
+                <pre> Ex: Hola       Això  és        un    pre</pre>
+                <p>"&amp;nbsp"Per a crear un espai en &nbsp blanc.</p>
+            </ul>
+            <h3>Recurssos</h3>
+            <ul>
+                <li><a href="https://www.freeformatter.com/html-escape.html" target="_blank"> Escapar text</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3C Schools</a> </li>
+                <li> Google Fonts</li>
+                <li> Dafont</li>
+                <li> Css Gradient.io</li>
+                <li> Aconseguir Paleta de Colors amb Paint. Amb el Paint escriure un text, qualsevol, agafes el seleccionador, el fas molt petit, el desselecciones, el tornes a seleccionar i el fas gran. Cuirosament et crea una paleta.</li>
+                <li> Medium</li>
+                <li> CSS3 Border Image Generator - WebcodeTools</li>
+                <li> Validator w3</li>
+                
+            </ul>
+            
+            <h3>Extensions de Visual Studio Code</h3>
+            <ul><li>Open in browser</li>
+                <li>Escape HTML code</li>
+                <li>Placeholder Images</li> <!-- Lorems amb imatges -->
+                <li>Font Awesome</li>
+                <li>Better Coments</li>
+            </ul>
+            
+            <h3>Altres</h3> 
+            <ul>
+                <li>Aplicar un estil a tots els elements d'un document serveix per esborrar l'estil pre-determinat.</li>
+            </ul> 
+            <div id="bloque">
+                <h3>Estructura d'un document HTML5 </h3>
+                <p>L'Estructura bàsica d'un document HTML5 és la seguent:</p>
+                
+                <div class="code">
+                    <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang=&quot;en&quot;&gt;
+                        &lt;head&gt;
+                        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                        &lt;title&gt;Document&lt;/title&gt;
+                        &lt;style&gt; /* aquí va l'estil CSS */ &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;</pre>
+                    </div> 
+                    <p>Els comentaris en html són &lt;!-- així --&gt;. Els comentaris de CSS són /* així */.</p>
+                </div> 
+                <h3> Exercicis</h3>
+                <p><a href="".html">Document de proves d'html i Css<a>
+                </p>
+                <p><a href="Maquetació Noticies.htm">Maquetació de Notícies</a>&nbspHe après a fer el "div", el "border", el "@font-face", el "span class="
+                </p>
+                <p><a href="estils.html">Prova d'estils</a>
+                </p>
+                <p><a href="Maquetació vertical amb imatges.html">Maquetació Vertical<a>
+                </p>
+                <p><a href="CinemaScroll.html">Cinema amb un scroll</a>
+                </p>
+                <p><a href="3Columnes.html">Tres columnes amb display:inline-block</a>
+                </p>
+                <p><a href="DisplayFlexProves.html">Proves de display:flex amb caixes </a>
+                </p>
+                <p><a href="3ColumnesDisplayFlex.html">Tres columnes amb display:flex</a>
+                </p>
+                <p><a href="Panteó amb Scrolls i Flex.html">Panteó amb tres scrolls i display:flex</a>
+                </p>
+                <p><a href="Web Simple.html">Web Simple amb Menú i Contingut</a>
+                </p>
+                <p><a href="SushiTime(1).html">Maquetació d'un web amb tres estils CSS</a>
+                </p>
+                <p><a href="Finestres.html">Realització de tres finestres amb flex, inline-block/block i float</a>
+                </p>
+                <p><a href="Finestra amb block i hover.html">Realització d'una finestra amb block i hover</a>
+                </p>
+                <p><a href="Web Vuit/Índex.html">Maquetació del Web "Vuit"</a>
+                </p>
+
+                
+                <div class="footer">
+                    <p> Ester Batllori I Vila</p>
+                </div>
+                
+                <!-- CSS Diner
+                    Level 1: plate
+                    2: bento
+                    3: #fancy
+                    4: plate apple. Els selectors es llegeixen del revé
+                    5: fancy pickle 
+                    6: small
+                    7:
+                    8:orange.small
+                    9:orange.small bento
+                    10: table* .L'esterisc selecciona tot el qu ehi hagi deins d'un altre selector.
+                    13:bento (onada) pickle plate
+                    14: plate<apple>
+                        15: plate :first child
+                        16: 
+                        17: #fancy:last-child o apple,pickle:last-child
+                        18: plate:nth.child 3
+                        18: bento:nth-last-child (3)
+                        20: apple: first-of-type
+                        21: plate:nth-of-type (even)
+                        22: :nth-of-type (2n+3)
+                        23: plate apple: only-of-type
+                        24: orange,apple: last-of-type, 
+                        25: bento:empty
+                        26: apple not.small
+                        27:
+                        28:
+                        29:
+                        30: -->
+                    </div>
+                </body>
+                </html>

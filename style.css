@@ -5,19 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 
-/********** MOBILE FIRST **********/
-
-/* Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {}
-
-Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {}
-
-Medium devices (landscape tablets, 768px and up)
-@media only screen and (min-width: 768px) {}
-
-Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) { */
     *{
         font-family: 'Poppins', sans-serif;
         margin:0;
@@ -69,7 +56,6 @@ Large devices (laptops/desktops, 992px and up)
         scroll-behavior: smooth;
     }
     div.general{
-        scroll-snap-type: y proximity;
         overflow: scroll;
         height: 100vh;
     }
@@ -80,8 +66,10 @@ Large devices (laptops/desktops, 992px and up)
         display: none;
     }  
     /* CONTAINERS */
-    div.container{
+    div.height{
         height:100vh;
+    }
+    div.container{
         display:flex;
         flex-direction:column;
         justify-content: center;
@@ -136,7 +124,7 @@ Large devices (laptops/desktops, 992px and up)
     div.contact{
         margin:7% auto auto auto;
         text-align:center; 
-        padding:1.5rem;
+        padding:1.5rem 1.5rem 0 1.5rem;
         border-top: 1px solid #98777867;
     }
     div.contact > h4{
@@ -152,16 +140,20 @@ Large devices (laptops/desktops, 992px and up)
         color: #987778;
     }
     #presentation > div.nextPage{
-        margin:0 auto 5% auto;
+        margin:0 auto 7% auto;
     }
 
     /* WORK */
+    #work > h1.header{
+        margin-top:1em;
+    }
     div.projects{
         display:flex;
         justify-content:center;
         vertical-align:center;
         margin:auto;
         flex-wrap:wrap;
+        margin:1% auto 2% auto; 
     }
     a{
         text-decoration:none;
@@ -182,6 +174,7 @@ Large devices (laptops/desktops, 992px and up)
         display:flex;
         justify-content: space-between;
     }
+    
     div.bgWhite{
         background: rgba(255, 255, 255, 0.411);
         backdrop-filter: blur( 4.5px );
@@ -322,11 +315,9 @@ Large devices (laptops/desktops, 992px and up)
         div.period > div.bgWhite{
             height:400px;
         }
+
     }
     @media only screen and (max-width: 992px) {
-        h1.header{
-        font-size: 2em;
-        }
         html{
             scroll-behavior: initial;
         }
@@ -343,7 +334,7 @@ Large devices (laptops/desktops, 992px and up)
             display:none;
         }
         #presentation > div.main{
-            margin: 21% auto 29% auto;
+            margin: 19% auto 29% auto;
         }
         div.contact{
             /* border-bottom: 1px solid #98777867; */
@@ -351,16 +342,13 @@ Large devices (laptops/desktops, 992px and up)
         #work{
             margin:0% auto 15% auto;
         }
-        div.projects{
-            margin:3% auto 0 auto;
-        }
         div.project{
             margin:1.5% 1rem;
         }
         #periods{
             flex-wrap:wrap;
             margin:auto;
-            margin:0.5% auto 5% auto;
+            margin:1% auto 5% auto;
         }
         div.period{
             margin:1.5% 5%;
@@ -381,7 +369,7 @@ Large devices (laptops/desktops, 992px and up)
             padding:0 1.5rem;
         }
         #presentation > div.main{
-            margin: 20% auto 20% auto;
+            margin: 13% auto 20% auto;
         }
         div.main > div.flexRow{
             flex-direction:column;
@@ -418,7 +406,7 @@ Large devices (laptops/desktops, 992px and up)
             padding:0 1rem;
         }
         #presentation > div.main{
-            margin: 24% auto 15% auto;
+            margin: 14% auto 15% auto;
         }
         div.container > div > div.contact > div.icons{
             margin: 3% 0 0 0;
@@ -452,7 +440,7 @@ Large devices (laptops/desktops, 992px and up)
             font-size:1em;
         }
         #presentation > div.main{
-            margin: 18% auto 12% auto;
+            margin: 16% auto 12% auto;
         }
         div.flexC > h1{
             margin: 1% 0%;

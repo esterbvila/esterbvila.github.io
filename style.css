@@ -107,7 +107,7 @@ Large devices (laptops/desktops, 992px and up)
     div.main > div.flexRow{
         display:flex;
         justify-content:space-between;
-        width:680px;
+        width:700px;
     }
     div.flexC{
         display:flex;
@@ -125,7 +125,7 @@ Large devices (laptops/desktops, 992px and up)
         margin: 1% 0;
         text-align:left;
         line-height:1.3em;
-        width:404px;
+        width:440px;
     }
     h1.animate__animated{
         font-style:italic;
@@ -182,11 +182,6 @@ Large devices (laptops/desktops, 992px and up)
         display:flex;
         justify-content: space-between;
     }
-    div.bgBrown >p.go > i{
-        font-size:2em;
-        margin-top: 4px;
-        color:#c0acad;
-    }
     div.bgWhite{
         background: rgba(255, 255, 255, 0.411);
         backdrop-filter: blur( 4.5px );
@@ -198,7 +193,7 @@ Large devices (laptops/desktops, 992px and up)
     div.project > div.bgWhite{
         height:405px;
     }
-    .projectImg{
+    img.projectImg{
         width:340px;
         height:190px;
     }
@@ -460,7 +455,7 @@ Large devices (laptops/desktops, 992px and up)
             margin: 18% auto 12% auto;
         }
         div.flexC > h1{
-            margin: 1% 0;
+            margin: 1% 0%;
         }
         div.contact{
             padding:1rem;

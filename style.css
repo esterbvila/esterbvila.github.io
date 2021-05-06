@@ -174,7 +174,6 @@
         display:flex;
         justify-content: space-between;
     }
-    
     div.bgWhite{
         background: rgba(255, 255, 255, 0.411);
         backdrop-filter: blur( 4.5px );
@@ -203,6 +202,13 @@
         display:flex;
         justify-content:space-evenly;
         border-top: 1px solid #8c69691c;
+    }
+    div.projectImg{
+        width:340px;
+        height:190px;
+    }
+    img.projectImg{
+        
     }
     div.ocult{
         opacity:0;

@@ -287,7 +287,12 @@
     }
     #future > .bgWhite {
         background: rgba(255, 255, 255, 0.488);
-    }
+    }   
+    mark {
+        background-color:#f0ffff;
+        /* background-color:#fffaf3; */
+        color: #8c6969;
+      }
 
 
     /* CONTACT */

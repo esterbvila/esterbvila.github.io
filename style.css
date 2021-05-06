@@ -288,12 +288,12 @@
     #future > .bgWhite {
         background: rgba(255, 255, 255, 0.488);
     }   
-    mark {
-        background-color:#f0ffff;
+    span.highlight {
+        background-color:#e7ffffbd;
         /* background-color:#fffaf3; */
-        color: #8c6969;
-      }
-
+        font-weight:500;
+        /*font-size:1.1em;*/
+    }
 
     /* CONTACT */
     div.marginAuto{

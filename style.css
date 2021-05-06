@@ -278,15 +278,13 @@
         background-color:#795757;
     }
     #feb > .bgWhite {
-        background-color:#8c696993;
-        background: rgba(255, 255, 255, 0.194);
+        /* background: rgba(255, 255, 255, 0.194); */
     }
     #nov > .bgWhite {
-        background-color:#8c696993;
-        background: rgba(255, 255, 255, 0.29);
+        /* background: rgba(255, 255, 255, 0.29); */
     }
     #future > .bgWhite {
-        background: rgba(255, 255, 255, 0.488);
+        /* background: rgba(255, 255, 255, 0.488); */
     }   
     span.highlight {
         background-color:#e7ffffbd;

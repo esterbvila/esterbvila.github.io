@@ -144,6 +144,9 @@
     }
 
     /* WORK */
+    #work{
+        margin:0% auto 5% auto;
+    }
     #work > h1.header{
         margin-top:1em;
     }
@@ -153,7 +156,7 @@
         vertical-align:center;
         margin:auto;
         flex-wrap:wrap;
-        margin:1% auto 2% auto; 
+        margin:1% auto 1% auto; 
     }
     a{
         text-decoration:none;
@@ -196,7 +199,6 @@
     p.padding{
         padding:1rem;
     }
-    
     p.icons {
         font-size: 1.5rem;
         padding: 1rem;
@@ -207,9 +209,6 @@
     div.projectImg{
         width:340px;
         height:190px;
-    }
-    img.projectImg{
-        
     }
     div.tocar{
         height:190px;
@@ -246,6 +245,9 @@
     #journey > div.flexRow{
         display:flex;
         justify-content:center;
+    }
+    #periods{
+        margin:2% auto 0 auto;
     }
     div.period{
         display:flex;
@@ -300,7 +302,7 @@
 
     /* CONTACT */
     div.marginAuto{
-        margin:auto;
+        margin:5% auto 0 auto;
     }
     div.marginAuto > div{
         text-align:center;
@@ -351,18 +353,13 @@
             margin: 19% auto 29% auto;
         }
         div.contact{
-            /* border-bottom: 1px solid #98777867; */
-        }
-        #work{
-            margin:0% auto 15% auto;
+            margin:5% auto auto auto;
         }
         div.project{
             margin:1.5% 1rem;
         }
         #periods{
             flex-wrap:wrap;
-            margin:auto;
-            margin:1% auto 5% auto;
         }
         div.period{
             margin:1.5% 5%;
@@ -372,11 +369,8 @@
             height:max-content;
         }
         #contact{
-            margin:5% auto 0.5% auto;
+            margin:4% auto 0.5% auto;
         } 
-        div.contact{
-            margin:5% auto auto auto;
-        }
     }
     @media only screen and (max-width: 768px) {
         #presentation{

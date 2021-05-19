@@ -245,14 +245,12 @@
     #journey > div.flexRow{
         display:flex;
         justify-content:center;
-    }
-    #periods{
-        margin:2% auto 0 auto;
+        margin:1% 0 0 0;
     }
     div.period{
         display:flex;
         flex-direction:column;
-        margin:auto 0.5%;
+        margin:1%;
         width:320px;
     }
     div.period > div.bgWhite{
@@ -329,9 +327,8 @@
     
     @media only screen and (max-width: 1150px) {
         div.period > div.bgWhite{
-            height:400px;
+            height:415px;
         }
-
     }
     @media only screen and (max-width: 992px) {
         html{
@@ -358,8 +355,8 @@
         div.project{
             margin:1.5% 1rem;
         }
-        #periods{
-            flex-wrap:wrap;
+        #journey > div.flexRow{
+            flex-wrap: wrap;
         }
         div.period{
             margin:1.5% 5%;
@@ -406,8 +403,6 @@
         div.contact{
             margin:4% auto auto auto;
         }
-
-        
     }
     @media only screen and (max-width: 600px) {
         #presentation{

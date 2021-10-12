@@ -110,10 +110,10 @@
         box-shadow: 0 8px 32px 0 #8c69695e;
     }
     div.flexC > h1{
-        margin: 1% 0;
+        margin: 1% 0 1% 6%;
         text-align:left;
         line-height:1.3em;
-        width:440px;
+        width:500px;
     }
     h1.animate__animated{
         font-style:italic;
@@ -144,6 +144,12 @@
     }
 
     /* WORK */
+    p.go>img{
+        border-radius:50%;
+    }
+    p.go>img.no-border-radius{
+        border-radius:0%;
+    }
     #work{
         margin:0% auto 5% auto;
     }
@@ -163,7 +169,8 @@
     }
     div.project{
         margin:1% 1rem;;
-        width:342px;
+        width:400px;
+        height:483.5px;
         border-radius:10px;
     }
     div.project:hover{
@@ -184,13 +191,20 @@
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         border-radius: 0px 0px 10px 10px; 
+        height:415px;
     }
-    div.project > div.bgWhite{
-        height:405px;
+    .projectImg{
+        width:398px;
+        height:220px;
     }
-    img.projectImg{
-        width:340px;
-        height:190px;
+    video{
+        width:400px;
+        height:244px;
+        padding:0;
+        margin:0;
+    }
+    video.stipple{
+        height:245px;
     }
     i.work{
         font-size:2.5em;
@@ -207,17 +221,17 @@
         border-top: 1px solid #8c69691c;
     }
     div.projectImg{
-        width:340px;
-        height:190px;
+        width:400px;
+        height:220px;
     }
     div.tocar{
-        height:190px;
+        height:220px;
     }
     div.ocult{
         opacity:0;
         position:absolute;
-        width:340px;
-        height:190px;
+        width:400px;
+        height:220px;
         text-align: center;
         background-color: #8c696973;
     }
@@ -414,21 +428,35 @@
         div.container > div > div.contact > div.icons{
             margin: 3% 0 0 0;
         }
-        div.project{
-            margin:3% 1rem;
-        }
-        img.projectImg{
-            width:100%;
-            height:190px;
-        }
-        div.ocult{
-            width:100%;
-            height:190px;
-        }
         #contact{
             padding:1rem;
         } 
     }
+    @media only screen and (max-width:430px) {
+        div.project{
+            width:340px;
+        }
+        .projectImg{
+            width:340px;
+            height:180px;
+        }
+        video{
+            width:340px;
+            height:220px;
+        }
+        div.projectImg{
+            width:340px;
+            height:180px;
+        }
+        div.tocar{
+            height:180px;
+        }
+        div.ocult{
+            width:400px;
+            height:180px;
+        }
+    }
+
     @media only screen and (max-width: 390px) {
         h1{
             font-size: 2em;

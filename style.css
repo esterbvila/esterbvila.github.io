@@ -435,7 +435,10 @@
         }
         video{
             width:340px;
-            height:220px;
+            height:207px;
+        }
+        video.stipple{
+            height:207px;
         }
         div.projectImg{
             width:340px;

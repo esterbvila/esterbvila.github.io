@@ -405,15 +405,6 @@
             margin:auto;
             width:unset;
         }
-        div.project{
-            margin:2% 1rem;
-        }
-        div.period{
-            width:unset;
-        }
-        div.period > div.bgWhite{
-            height:max-content;
-        }
         div.contact{
             margin:4% auto auto auto;
         }
@@ -425,8 +416,8 @@
         #presentation > div.main{
             margin: 14% auto 15% auto;
         }
-        div.container > div > div.contact > div.icons{
-            margin: 3% 0 0 0;
+        div.project{
+            margin:15px 0;
         }
         #contact{
             padding:1rem;
@@ -435,6 +426,8 @@
     @media only screen and (max-width:430px) {
         div.project{
             width:340px;
+            height:unset;
+            margin:15px 0;
         }
         .projectImg{
             width:340px;
@@ -452,65 +445,12 @@
             height:180px;
         }
         div.ocult{
-            width:400px;
+            width:340px;
             height:180px;
         }
+        div.bgWhite{
+            height:unset;
+        }
     }
 
-    @media only screen and (max-width: 390px) {
-        h1{
-            font-size: 2em;
-        }
-        h2{
-            font-size:1.3em;
-        }
-        h3{
-            font-size:1.1em;
-        }
-        h4{
-            font-size:1em;
-        }
-        #presentation > div.main{
-            margin: 16% auto 12% auto;
-        }
-        div.flexC > h1{
-            margin: 1% 0%;
-        }
-        div.contact{
-            padding:1rem;
-        }
-        div.contact >h4 {
-            letter-spacing:1px;
-        }
-        div.project{
-            width:unset;
-        }
-        div.project > div.bgWhite{
-            height:max-content;
-        }
-        img.projectImg{
-            width:100%;
-            height:170px;
-        }
-        div.tocar{
-            max-height:170px;
-        }
-        div.ocult{
-            width:100%;
-            height:170px;
-        }
-        p.goIcons{
-            margin-top:3.5em;
-        }
-        div.marginAuto > div{
-            width:250px;
-        }
-        i.footer{
-            font-size:2.5em;
-        }
-
-    }
-   
-
-/*Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {} */
+  

@@ -379,7 +379,7 @@
             height:max-content;
         }
         #contact{
-            margin:4% auto 0.5% auto;
+              margin:4% auto 0.5% auto;
         } 
     }
     @media only screen and (max-width: 768px) {
